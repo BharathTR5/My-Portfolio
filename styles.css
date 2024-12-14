@@ -355,11 +355,187 @@
 }
 .service{
   height: 150px;
-  width: 170px;
+  width: 150px;
   padding: 0.3rem;
   margin: 0.3rem;
+  text-align: center;
 }
 .services{
   margin-top: 25rem;
  }
+}
+
+
+/* Skills Section */
+#resume{
+  padding: 3rem 0;
+  text-align: center;
+  background-color: rgba(255,244,235,255);
+  height: 150vh;
+}
+.resume-container{
+  text-align: justify;
+  padding: 2rem 0rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.timeline{
+  width: 2px;
+  height: 110vh;
+  background-color: black;
+  margin-top: 5rem;
+  position: absolute;
+  left: 10rem;
+}
+.round{
+  background-color: #ff6600;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  position: absolute;
+}
+.round1{
+  top: 13rem;
+  left: 9.1rem;
+}
+.sections{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 5rem 0 0 20rem;
+  height: 110vh;
+}
+.education{
+  width: 90%;
+  background-color: white;
+  height: 33vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-content: center;
+  justify-items: center;
+}
+.education-heading{
+  position: absolute;
+  top: 13.2rem;
+  left: 11.5rem;
+}
+.edu{
+  line-height: 2.3rem;
+  border-left: 2px solid hsl(0, 0%, 88%);
+  padding: 1rem;
+}
+.edu1{
+  border: none;
+}
+.edu p{
+  color: #606060;
+}
+.Skills-heading{
+  position: absolute;
+  top: 29.2rem;
+  left: 11.5rem;
+}
+.round2{
+  top: 29rem;
+  left: 9.1rem;
+}
+.Skills{
+  width: 90%;
+  background-color: white;
+  height: 33vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-content: center;
+  justify-items: center;
+}
+.skill{
+  line-height: 1.5rem;
+  border-left: 2px solid hsl(0, 0%, 88%);
+  padding: 1rem;
+  
+}
+.skill1{
+  border: none;
+}
+.skill p{
+  color: #606060;
+}
+.round3{
+  top: 45rem;
+  left: 9.1rem;
+}
+.experience-heading{
+  position: absolute;
+  top: 45.2rem;
+  left: 11.5rem;
+}
+.experience-section{
+  width: 90%;
+  background-color: white;
+  height: 33vh;
+  align-content: center;
+  justify-items: center;
+}
+.experience1{
+  line-height: 2rem;
+  text-align: center;
+}
+.experience-section h2, .experience-section h3{
+  color: #606060;
+}
+.responsive-heading{
+  display: none;
+}
+
+@media (max-width:1000px){
+  .responsive-heading{
+    display: block;
+    color: #ff6600;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
+  .timelines{
+    display: none;
+  }
+  .resume-container{
+    height: 170vh;
+    background-color: rgba(255,244,235,255);
+  }
+  .education, .experience-section, .Skills{
+    margin: 0 3rem;
+  }
+  .sections{
+    margin: 0rem 0;
+  }
+}
+@media (max-width:750px){
+  .resume-container{
+    height: 250vh;
+    background-color: rgba(255,244,235,255);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .education, .Skills, .experience-section{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3 1fr);
+    height: auto;
+    justify-items: center;
+    text-align: center;
+    align-items: space-around;
+    margin-top: 2rem;
+    font-size: x-small;
+    width: 75%;
+  }
+  .skill, .edu{
+    border-left: none;
+    border-top: 1px solid #606060;
+  }
+  .skill1, .edu1{
+    border: none;
+  }
+  .sections{
+    margin: 0;
+  }
 }
